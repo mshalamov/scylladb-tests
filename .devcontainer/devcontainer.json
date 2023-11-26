@@ -1,0 +1,50 @@
+{
+	"name": "SkyllaDB Playwright e2e tests",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/playwright:v1.40.0-jammy",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use runArgs to specify docker parameters
+	"runArgs": [
+		"--net", "host", 
+		"-e", "DISPLAY=host.docker.internal:0",
+		"-v", "/tmp/.X11-unix:/tmp/.X11-unix"
+	],
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": { 
+				"resmon.show.battery": false,
+				"resmon.show.cpufreq": false
+			},		
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"GitHub.vscode-pull-request-github",
+				"esbenp.prettier-vscode",
+				"ms-playwright.playwright",
+				"ortoni.ortoni",
+				"mskelton.playwright-test-snippets",
+				"ryanrosello-og.playwright-vscode-trace-viewer",
+				"esbenp.prettier-vscode",
+				"xabikos.JavaScriptSnippets",
+				"aaron-bond.better-comments",
+				"usernamehw.errorlens",
+				"PKief.material-icon-theme"
+			]
+		}	
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "npx playwright install --with-deps chrome msedge chromium firefox webkit"
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

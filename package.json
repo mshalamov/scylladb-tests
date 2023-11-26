@@ -1,0 +1,14 @@
+{
+  "name": "scylladb-tests",
+  "version": "1.0.0",
+  "description": "SkyllaDB Playwright e2e tests",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0"
+  }
+}
