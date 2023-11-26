@@ -1,7 +1,7 @@
 {
-  "name": "scylladb-e2e-tests",
+  "name": "scylladb-tests",
   "version": "1.0.0",
-  "description": "SkyllaDB Playwright e2e tests",
+  "description": "SkyllaDB Playwright tests",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
