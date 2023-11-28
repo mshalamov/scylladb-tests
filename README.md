@@ -1,6 +1,6 @@
 # How to run project locally
 
-##General Prerequisites:
+## General Prerequisites:
 
 - Git is installed: <a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a>
 - Docker installed: <a href="https://docs.docker.com/engine/install/" target="_blank">https://docs.docker.com/engine/install/</a>
