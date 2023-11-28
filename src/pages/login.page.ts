@@ -11,9 +11,11 @@ class LoginPage {
   constructor(page: Page) {
     this.page = page;
     this.signInTitle = page.locator('text=Sign-in');
-    this.emailInput = page.locator('//input[@name="email"]');
+    this.emailInput = page.locator('//input[@data-test-id="input-identifier"]');
     this.continueButton = page.locator('text=Continue');
-    this.passwordInput = page.locator('//input[@name="password"]');
+    this.passwordInput = page.locator(
+      '//input[@data-test-id="input-password"]',
+    );
     this.signInButton = page.locator('text=Sign in');
   }
 
