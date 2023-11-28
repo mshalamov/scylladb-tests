@@ -7,9 +7,9 @@
 - VS code: <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
 - In VS code install "Dev Containers" extension: <a href="vscode:extension/ms-vscode-remote.remote-containers" target="_blank">install</a>
 
-##OS Prerequisites:
+## OS Prerequisites:
 
-Please note if you want run your tests in headless mode (for debugging) you should have up an run X Server application.
+Please note if you want to run your tests in headless mode (for debugging), you should have up and running X Server application.
 
 1. Windows:
 
@@ -23,7 +23,7 @@ Please note if you want run your tests in headless mode (for debugging) you shou
   - <a href="https://sourceforge.net/projects/vcxsrv/" target="_blank">https://sourceforge.net/projects/vcxsrv/</a>
   - if brew is installed, run in terminel `brew install --cask xquartz`
 
-Setting up the application:
+## Setting up the application:
 
 - Run docker
 - Run VS code
@@ -35,4 +35,9 @@ Setting up the application:
   - Use the default for any other prompts by hitting enter
   - You can open the terminal to check the setup process and see potentials errors
   - When initial setup is done, you should have a terminal prompt looking something like this `root@${pc_name}:/workspaces/scylladb-tests#`
+  - Create a .env file and put there credentials
+    ```
+    EMAIL: your_email
+    PASSWORD: your_password
+    ```
   - Run `npx playwright test`
