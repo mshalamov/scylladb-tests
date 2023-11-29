@@ -41,3 +41,12 @@ Please note if you want to run your tests in headless mode (for debugging), you 
     PASSWORD: your_password
     ```
   - Run `npx playwright test`
+
+## List of improvements
+
+- Add authentication via API
+- Use for authentication fixtures
+- Use for page objects initialisation fixtures
+- Add Cypress support
+- Add Allure report
+- Add test with drop down

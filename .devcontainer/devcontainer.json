@@ -1,7 +1,7 @@
 {
   "name": "SkyllaDB Playwright e2e tests",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/playwright:v1.40.0-jammy",
+  "image": "mcr.microsoft.com/playwright:v1.37.0-jammy",
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
