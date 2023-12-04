@@ -35,8 +35,9 @@ Please note if you want to run your tests in headless mode (for debugging), you 
   - Use the default for any other prompts by hitting enter
   - You can open the terminal to check the setup process and see potentials errors
   - When initial setup is done, you should have a terminal prompt looking something like this `root@${pc_name}:/workspaces/scylladb-tests#`
-  - Create a .env file and put there credentials
+  - Create a .env file and put there auth url and credentials
     ```
+    BASE_AUTH_URL: auth_url
     EMAIL: your_email
     PASSWORD: your_password
     ```
@@ -44,9 +45,6 @@ Please note if you want to run your tests in headless mode (for debugging), you 
 
 ## List of improvements
 
-- Add authentication via API
-- Use for authentication fixtures
-- Use for page objects initialisation fixtures
 - Add Cypress support
 - Add Allure report
 - Add test with drop down

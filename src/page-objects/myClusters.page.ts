@@ -1,10 +1,10 @@
 import { Page, Locator } from '@playwright/test'
-import HeaderComponent from './component/header.component'
-import NavigateComponent from './component/navigate.component'
+import HeaderComponent from './page-component/header.component'
+import NavigateComponent from './page-component/navigationMenu.component'
 
 class MyClustersPage {
-  page: Page
-  myClusterTitle: Locator
+  readonly page: Page
+  readonly myClusterTitle: Locator
 
   constructor(page: Page) {
     this.page = page
@@ -21,7 +21,7 @@ class MyClustersPage {
     return new HeaderComponent(this.page)
   }
 
-  navigateComponent() {
+  navigateTo() {
     return new NavigateComponent(this.page)
   }
 }

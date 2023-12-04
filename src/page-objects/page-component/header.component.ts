@@ -1,19 +1,19 @@
 import { Page, Locator /* expect */ } from '@playwright/test'
 
 class HeaderComponent {
-  page: Page
-  aVatar: Locator
-  signOut: Locator
+  readonly page: Page
+  readonly aVatar: Locator
+  readonly signOutLink: Locator
 
   constructor(page: Page) {
     this.page = page
     this.aVatar = page.locator('//div[@data-element="Avatar"]')
-    this.signOut = page.locator('text=Sign out')
+    this.signOutLink = page.locator('text=Sign out')
   }
 
-  async logout() {
+  async signOut() {
     await this.aVatar.click()
-    await this.signOut.click()
+    await this.signOutLink.click()
   }
 }
 

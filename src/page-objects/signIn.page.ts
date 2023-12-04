@@ -1,12 +1,12 @@
 import { Page, Locator } from '@playwright/test'
 
-class LoginPage {
-  page: Page
-  signInTitle: Locator
-  emailInput: Locator
-  continueButton: Locator
-  passwordInput: Locator
-  signInButton: Locator
+class SignInPage {
+  readonly page: Page
+  readonly signInTitle: Locator
+  readonly emailInput: Locator
+  readonly continueButton: Locator
+  readonly passwordInput: Locator
+  readonly signInButton: Locator
 
   constructor(page: Page) {
     this.page = page
@@ -21,7 +21,7 @@ class LoginPage {
     await this.page.goto('/account/login')
   }
 
-  async login(email: string, password: string) {
+  async signIn(email: string, password: string) {
     await this.emailInput.fill(email)
     await this.continueButton.click()
     await this.passwordInput.fill(password)
@@ -29,4 +29,4 @@ class LoginPage {
   }
 }
 
-export default LoginPage
+export default SignInPage
