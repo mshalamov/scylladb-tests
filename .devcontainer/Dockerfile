@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.40.1
+FROM mcr.microsoft.com/playwright:v1.41.0
 
 RUN npx playwright install --with-deps chrome msedge chromium firefox webkit
 
