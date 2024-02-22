@@ -1,5 +1,4 @@
-import { test } from '../../test.setup'
-import { expect } from '@playwright/test'
+import { test, expect } from '../../test.setup'
 
 test.describe('UI Authentication', () => {
   test('Verify sign out', async ({ signInPage, myClustersPage }) => {

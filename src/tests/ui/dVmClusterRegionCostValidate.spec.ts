@@ -1,5 +1,4 @@
-import { test } from '../../test.setup'
-import { expect } from '@playwright/test'
+import { test, expect } from '../../test.setup'
 
 test.describe('Dedicated VM Region change', () => {
   test('Verify when changing a region, the pricing change', async ({

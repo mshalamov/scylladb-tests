@@ -33,3 +33,6 @@ export const test = baseTest.extend<TestSetup>({
     await use(new NewClusterPage(page))
   },
 })
+
+export const expect = test.expect
+export const describe = test.describe

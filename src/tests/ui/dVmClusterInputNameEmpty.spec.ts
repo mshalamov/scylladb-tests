@@ -1,5 +1,4 @@
-import { test } from '../../test.setup'
-import { expect } from '@playwright/test'
+import { test, expect } from '../../test.setup'
 
 test.describe('Dedicated VM Cluster Name input feild validation', () => {
   test('Veryfy Cluster Name input feild fill empty value', async ({
